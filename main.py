@@ -1,22 +1,30 @@
-import os
 import subprocess
 
-# jar_file_path = "FACTEMICLI-2.5.16-9655-cmdClient.jar"
-# saft_file = "C:\\Users\\Frederico\\Desktop\\rederico Gago\\Confere\\Programas\\saft_project\\saft_exemplo\\SAFT_10101_01022021_28022021.xml"
-# file_output = "C:\\Users\\Frederico\\Desktop\\Frederico Gago\\Confere\\Programas\\saft_project\\output_response.txt"
-# command = f"java -jar {jar_file_path} -n 503553522 -p 101503553522 -a 2021 -m 02 -op enviar -i {saft_file} -o {file_output} -t"
+
+language = "java"
+file_reader = "-jar"
+file_exe = "FACTEMICLI-2.5.16-9655-cmdClient.jar"  # In the current directory
+nif = "-n"
+number_nif = "503553522"
+password = "-p"
+number_password = "0000000000"
+year = "-a"
+number_year = "2021"
+month = "-m"
+number_month = "02"
+operation = "-op"
+number_operation = "enviar"  # "validar"
+input_param = "-i"
+input_file = r"C:\Users\Frederico\Desktop\Frederico_Gago\Confere\Programas\saft_project\saft_exemplo\SAFT_10101_01022021_28022021.xml"
+output_param = "-o"
+output_file = r"C:\Users\Frederico\Desktop\Frederico_Gago\Confere\Programas\saft_project\output_response.xml"
+test = "-t"
 
 
-# os.system(f"cmd /k java -jar FACTEMICLI-2.5.16-9655-cmdClient.jar -n 503553522 -p 101503553522 -a 2021 -m 02 -op enviar -i " + saft_file + " -o 'C:\\Users\\Frederico\\Desktop\\Frederico Gago\\Confere\\Programas\\saft_project\\output_response.txt' -t")
-# os.system("cmd /k java -version")
+proc1 = subprocess.run([language, file_reader, file_exe, nif, number_nif, password, number_password, year, number_year, month, number_month, operation, number_operation, input_param, input_file, output_param, output_file, test], capture_output=True)
 
-# subprocess.run(("cmd", "/C", command))
-
-# subprocess.run(["ls", "-l"])
-
-string = "java -jar FACTEMICLI-2.5.16-9655-cmdClient.jar -n 503553522 -p 101503553522 -a 2021 -m 02 -op enviar -i 'C:\\Users\\Frederico\\Desktop\\Frederico_Gago\\Confere\\Programas\\saft_project\\saft_exemplo\\SAFT_10101_01022021_28022021.xml' -o 'C:\\Users\\Frederico\\Desktop\\Frederico_Gago\\Confere\\Programas\\saft_project\\output_response.txt' -t"
-#
-p1 = subprocess.run(string, shell=True)
-# # os.system(string)
-print(p1.args)
-
+print(proc1)
+print("-"*100)
+print(proc1.stderr.decode("ISO-8859-1"))
+print("-"*100)
+print(proc1.stdout.decode("ISO-8859-1"))
