@@ -20,9 +20,10 @@ Running Shell Commands using Python (Detailed Explanation):
     https://gist.github.com/FredericoIsaac/df0bdb79356b7e6b8ff08b6b5f5e213f
 
 
-# Directory
+# XML Library Help
 
-Documentos (SRV-SABINO2016)lho
+    https://docs.python.org/3.3/library/xml.etree.elementtree.html
+    https://towardsdatascience.com/processing-xml-in-python-elementtree-c8992941efd2
 
 
 ## Apontamentos
