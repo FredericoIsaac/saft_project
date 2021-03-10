@@ -7,6 +7,10 @@ https://docs.oracle.com/en/java/javase/15/
 java -jar 'FACTEMICLI-2.5.16-9655-cmdClient.jar' -n 503553522 -p 101503553522 -a 2021 -m 02 -op enviar -i 'C:\Users\Frederico\Desktop\Frederico Gago\Confere\Programas\saft_project\saft_exemplo\SAFT_10101_01022021_28022021.xml' -o 'C:\Users\Frederico\Desktop\Frederico Gago\Confere\Programas\saft_project\output_response.txt' -t
 
 
+# Flow chart
+
+https://app.diagrams.net/#HFredericoIsaac%2Fsaft_project%2Fmaster%2Fsend_saft
+
 # Subprocess Library Explanation
 
 Running Shell Commands using Python (Detailed Explanation):
@@ -14,6 +18,11 @@ Running Shell Commands using Python (Detailed Explanation):
     https://www.youtube.com/watch?v=IIiKVaxHCX0
 
     https://gist.github.com/FredericoIsaac/df0bdb79356b7e6b8ff08b6b5f5e213f
+
+
+# Directory
+
+Documentos (SRV-SABINO2016)lho
 
 
 ## Apontamentos
